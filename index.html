@@ -107,6 +107,124 @@
 
             <p>La etiqueta video reproduce un archivo de video propio de la pagina; iframe inserta una pagina o recurso externo dentro de la pagina actual.</p>
         </section>
+
+        <section id="horario">
+            <h2>Horario academico</h2>
+            <table>
+                <caption>Horario academico</caption>
+                <thead>
+                    <tr>
+                        <th>Asignatura</th>
+                        <th>Dia</th>
+                        <th>Hora</th>
+                        <th>Modalidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Constitucion y Ciudadania</td>
+                        <td>Lunes</td>
+                        <td>07:00</td>
+                        <td>Virtual</td>
+                    </tr>
+                    <tr>
+                        <td>Programacion IV</td>
+                        <td>Martes</td>
+                        <td>07:00</td>
+                        <td>Virtual</td>
+                    </tr>
+                    <tr>
+                        <td>Calculo Vectorial</td>
+                        <td>Miercoles</td>
+                        <td>07:00</td>
+                        <td>Virtual</td>
+                    </tr>
+                    <tr>
+                        <td>Fundamentos Web</td>
+                        <td>Jueves</td>
+                        <td>07:00</td>
+                        <td>Virtual</td>
+                    </tr>
+                    <tr>
+                        <td>Ecuaciones Diferenciales</td>
+                        <td>Viernes</td>
+                        <td>10:00</td>
+                        <td>Virtual</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contacto">
+            <h2>Formulario de contacto</h2>
+            <form>
+                <fieldset>
+                    <legend>Informacion academica</legend>
+
+                    <p>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre">
+                    </p>
+
+                    <p>
+                        <label for="correo">Correo:</label>
+                        <input type="email" id="correo" name="correo">
+                    </p>
+
+                    <p>
+                        <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+                        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
+                    </p>
+
+                    <p>
+                        <label for="semestre-numero">Semestre actual:</label>
+                        <input type="number" id="semestre-numero" name="semestre-numero">
+                    </p>
+
+                    <p>
+                        <label for="semestre">Seleccione su semestre:</label>
+                        <select id="semestre" name="semestre">
+                            <option value="">Seleccione</option>
+                            <option value="1">Primer semestre</option>
+                            <option value="2">Segundo semestre</option>
+                            <option value="3">Tercer semestre</option>
+                            <option value="4">Cuarto semestre o superior</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferencias de contacto</legend>
+
+                    <p>Modalidad preferida:</p>
+                    <input type="radio" id="virtual" name="modalidad" value="virtual">
+                    <label for="virtual">Virtual</label>
+                    <input type="radio" id="presencial" name="modalidad" value="presencial">
+                    <label for="presencial">Presencial</label>
+
+                    <p>Temas de interes:</p>
+                    <input type="checkbox" id="html" name="temas" value="html">
+                    <label for="html">HTML</label>
+                    <input type="checkbox" id="programacion" name="temas" value="programacion">
+                    <label for="programacion">Programacion</label>
+                    <input type="checkbox" id="inteligencia-artificial" name="temas" value="inteligencia-artificial">
+                    <label for="inteligencia-artificial">Inteligencia artificial</label>
+
+                    <p>
+                        <label for="nivel-interes">Nivel de interes en desarrollo web:</label>
+                        <input type="range" id="nivel-interes" name="nivel-interes" min="1" max="10" value="5">
+                    </p>
+
+                    <p>
+                        <label for="comentario">Comentario:</label>
+                        <textarea id="comentario" name="comentario" rows="5" cols="40"></textarea>
+                    </p>
+                </fieldset>
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </form>
+        </section>
     </main>
 </body>
 </html>
